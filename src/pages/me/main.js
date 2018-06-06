@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import App from './index'
+import App from './Me'
 
 const app = new Vue(App)
 app.$mount()
 
 export default {
   config: {
-    navigationBarTitleText: '查看启动日志'
+    navigationBarTitleText: '个人中心'
   }
 }

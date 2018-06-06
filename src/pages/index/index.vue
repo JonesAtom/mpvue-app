@@ -4,13 +4,13 @@
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <div class="userinfo-nickname">
-        <card :text="userInfo.nickName"></card>
+        <!-- <card :text="userInfo.nickName"></card> -->
       </div>
     </div>
 
     <div class="usermotto">
       <div class="user-motto">
-        <card :text="motto"></card>
+        <!-- <card :text="motto"></card> -->
       </div>
     </div>
 
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import card from '@/components/card'
+// import card from '@/components/card'
 
 export default {
   data () {
@@ -32,9 +32,9 @@ export default {
     }
   },
 
-  components: {
-    card
-  },
+  // components: {
+  //   card
+  // },
 
   methods: {
     bindViewTap () {

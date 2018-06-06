@@ -28,7 +28,16 @@ module.exports = {
     autoOpenBrowser: false,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 设置代理
+      // '/apis': { //将www.exaple.com印射为/apis
+      //   target: 'https://www.easy-mock.com/mock/5b1777dafbe46869c0b68710/mapi', // 接口域名
+      //   changeOrigin: true, //是否跨域
+      //   pathRewrite: {
+      //     '^/apis': '' //需要rewrite的,
+      //   }
+      // }
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
