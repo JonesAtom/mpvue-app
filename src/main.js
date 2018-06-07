@@ -22,8 +22,6 @@ export default {
       selectedColor: "#ea5149",
       "list": [{
         "pagePath": "pages/books/main",
-        "iconPath": "",
-        "selectedIconPath": "",
         "text": "列表"
       }, {
         "pagePath": "pages/me/main",
