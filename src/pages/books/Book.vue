@@ -1,6 +1,9 @@
 <template>
   <div class="mebox">
-    <p v-for="(item, index) in bookList" :key="index">{{item.title}}</p>
+    <div v-for="(item, index) in bookList" :key="index" style="padding:5px;">
+      <p>{{item.title}}</p>
+      <img :src="item.image" alt="">
+    </div>
 
   </div>
 </template>
@@ -21,7 +24,10 @@ export default {
 </script>
 
 <style scoped>
-
+  img{
+    width: 200px;
+    height: 50px;
+  }
 </style>
 
 
