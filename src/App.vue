@@ -1,9 +1,9 @@
 <script>
 export default {
-  async created () {
-    console.log("小程序启动了");
-  }
-}
+  async created() {
+    // console.log('小程序启动了');
+  },
+};
 </script>
 
 <style>
@@ -23,4 +23,4 @@ export default {
   -webkit-transition: width 2s;
   -o-transition: width 2s;
 }
-</style>
+</style>  
