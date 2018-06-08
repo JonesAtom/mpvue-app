@@ -2,7 +2,7 @@ const CONF = {
   serverHost: 'localhost',
   tunnelServerUrl: '',
   tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
-    // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+  // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
   qcloudAppId: '1253317040',
   qcloudSecretId: 'AKIDNivFbvdTcdifeas8ktySrAJH6kffgL1i',
   qcloudSecretKey: 'lQYZP8g5fZKvsodHn7GFauplnxDYis7S',
@@ -14,10 +14,10 @@ const CONF = {
   rootPathname: '',
 
   // 微信小程序 App ID
-  appId: '',
+  appId: 'wx81942afdad832e9a',
 
   // 微信小程序 App Secret
-  appSecret: '',
+  appSecret:'a9bdeb0f7f4f174809b35d8b2f7194db',
 
   // 是否使用腾讯云代理登录小程序
   useQcloudLogin: true,
@@ -29,24 +29,24 @@ const CONF = {
    */
   // create database cAuth
   mysql: {
-      host: 'localhost',
-      port: 3306,
-      user: 'root',
-      db: 'cAuth',
-      pass: '',
-      char: 'utf8mb4'
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    db: 'cAuth',
+    pass: '',
+    char: 'utf8mb4'
   },
 
   cos: {
-      /**
-       * 地区简称
-       * @查看 https://cloud.tencent.com/document/product/436/6224
-       */
-      region: 'ap-guangzhou',
-      // Bucket 名称
-      fileBucket: 'qcloudtest',
-      // 文件夹
-      uploadFolder: ''
+    /**
+     * 地区简称
+     * @查看 https://cloud.tencent.com/document/product/436/6224
+     */
+    region: 'ap-guangzhou',
+    // Bucket 名称
+    fileBucket: 'qcloudtest',
+    // 文件夹
+    uploadFolder: ''
   },
 
   // 微信登录态有效期

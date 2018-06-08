@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import App from './Book'
+import Vue from 'vue';
+import App from './Book';
 
-const app = new Vue(App)
-app.$mount()
+const app = new Vue(App);
+app.$mount();
 
 export default {
   config: {
-    navigationBarTitleText: '图书列表页'
-  }
-}
+    navigationBarTitleText: '图书列表页',
+  },
+};
