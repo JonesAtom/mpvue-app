@@ -33,5 +33,8 @@ router.get('/message', controllers.message.get)
 router.post('/message', controllers.message.post)
 
 // 新加路由
-router.get('/demo',controllers.demo)
+router.get('/demo', controllers.demo)
+
+// 添加图书
+router.post('/addBook', controllers.addBook)
 module.exports = router

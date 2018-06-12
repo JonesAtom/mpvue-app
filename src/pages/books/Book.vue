@@ -20,8 +20,8 @@ export default {
   },
   async created() {
     // const res = await GET('/book/list');
-    const res = await GET('/login');
-    this.bookList = res.list;
+    // const res = await GET('/login');
+    // this.bookList = res.list;
   },
 };
 </script>
