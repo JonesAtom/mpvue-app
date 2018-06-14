@@ -49,18 +49,15 @@ export default {
               login: true,
               success (userRes) {
                 showToast("登陆成功");
-                console.log(4545, userRes);
                 that.userInfo = userRes.data.data;
                 wx.setStorageSync('userInfo', userRes.data.data);
               }
             })
 
-
           }, fail: function (err) {
             wx.navigateTo({
               url: "/pages/authorize/main"
             })
-            console.log("登陆失败");
           }
         })
       } else {
@@ -80,14 +77,11 @@ export default {
     // 添加图书
     async addBook (isbn) {
       console.log(isbn);
-      const res = await post('/weapp/addBook',{
+      const res = await post('/weapp/addBook', {
         isbn,
-        openid:this.userInfo.openId
+        openid: this.userInfo.openId
       })
-      // console.log(res);
-      if(res.code == 0 && res.data.title){
-        showToast('添加成功','success')
-      }
+      console.log(res);
     },
   }
 };

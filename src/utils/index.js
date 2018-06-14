@@ -54,10 +54,10 @@ function request(url, method, data, header = {}) {
       header,
       url: config.host + url,
       success: function (res) {
-        if (res.data.code === 0) {
+        console.log("request-res=="+res);
+        if (res.data.code == 0) {
           resolve(res.data.data)
         } else {
-          showModal('失败', res.data.data.msg)
           reject(res.data)
         }
       }
